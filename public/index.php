@@ -57,7 +57,7 @@ $eventMembers = $broker->getEventParticipants($eventId);
             <?php foreach ($eventMembers['data'] as $member): ?>
             <li class="element">
                 <a class="profileLink" href="http://facebook.com/<?php echo $member['username'] ?>"
-                   title="<?php echo $member['name'] ?>"><img src="<?php echo $member['pic_crop'] ?>"
+                   title="<?php echo $member['name'] ?>"><img src="<?php echo $member['pic_crop']['uri'] ?>"
                     alt="<?php echo $member['name'] ?>" width="100" height="100"/></a>
             </li>
             <?php endforeach; ?>

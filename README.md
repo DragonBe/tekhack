@@ -5,3 +5,5 @@ participants in the [php[tek] 2013 hackathon](https://www.facebook.com/events/36
 on [Facebook](https://www.facebook.com).
 
 By participating, you automatically have a chance to win a great prize.
+
+The prize raffle tool can be found at [http://tekhack.azurewebsites.net](http://tekhack.azurewebsites.net).
