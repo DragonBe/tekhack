@@ -41,7 +41,9 @@ $eventMembers = $broker->getEventParticipants($eventId);
     <div id="header">
         <p><img id="hacking" src="/images/hack_laptop.png" width="250" height="" alt="hack"
                 align="right"/>Welcome to the php[tek] 2013 hackathon. If you haven't registered on the
-        event page, you're missing out on winning an awesome prize.</p>
+        <a href="https://www.facebook.com/events/364378906997047"
+           title="Registration for the php[tek] 2013 hackathon on Facebook">event page</a>,
+        you're missing out on winning an awesome prize.</p>
         <p>This hackathon is sponsosred by <a href="http://in2it.be" title="in2it vof">in2it
             vof</a>.</p>
     </div><!-- end header -->

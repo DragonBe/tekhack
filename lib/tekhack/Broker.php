@@ -17,7 +17,7 @@ class Broker
     const FB_API_KEY = '562151333825424';
     const FB_API_SEC = '4f34a1004b180dd3c0994164e5db011e';
     const FB_ACCESS_TOKEN = '562151333825424|JaeMyAxGBgMf_n2cfbw5Aq9PutU';
-    const FB_EVENT_ID = '425435760866905';
+    const FB_EVENT_ID = '364378906997047';
     const FB_GRAPH_URL = 'https://graph.facebook.com';
 
     /**
