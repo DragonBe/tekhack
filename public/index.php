@@ -50,7 +50,11 @@ $eventMembers = $broker->getEventParticipants($eventId);
 
     <h2>Current participants (<?php echo count($eventMembers['data']) ?>)</h2>
 
-    <div id="winner"></div>
+    <div id="winner">
+        <div style="text-align: center;"><h2>And the winner is...</h2></div>
+        <p><span id="message"></span>
+        <img id="profilePic" src="" alt="" width="64" height="64" style="vertical-align: middle; margin-left: 25px;"/></p>
+    </div>
 
     <div id="participants">
         <ul class="list">
@@ -58,10 +62,11 @@ $eventMembers = $broker->getEventParticipants($eventId);
             <li class="element">
                 <a class="profileLink" href="http://facebook.com/<?php echo $member['username'] ?>"
                    title="<?php echo $member['name'] ?>"><img src="<?php echo $member['pic_crop']['uri'] ?>"
-                    alt="<?php echo $member['name'] ?>" width="100" height="100"/></a>
+                    alt="<?php echo $member['name'] ?>" width="115" height="115"/></a>
             </li>
             <?php endforeach; ?>
         </ul>
+        <div class="clear">&nbsp;</div>
     </div><!-- end participants -->
 </div><!-- end wrapper -->
 
@@ -85,7 +90,10 @@ $eventMembers = $broker->getEventParticipants($eventId);
             } else {
                 var lucky = jQuery(value).children()[0];
                 jQuery(lucky).show();
-                jQuery('#winner').text('And the winner is: ' + jQuery(value).attr('title'));
+                var string = jQuery(value).attr('title');
+                jQuery('#message').text(string);
+                jQuery('img#profilePic').attr('src', jQuery(lucky).attr('src'));
+                jQuery('img#profilePic').attr('alt', jQuery(lucky).attr('alt'));
             }
         });
     }

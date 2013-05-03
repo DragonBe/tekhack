@@ -26,7 +26,8 @@ a:hover {
 
 #winner {
     background: lightgreen;
-    padding: 20px 25px;
+    padding: 5px 25px;
+    text-align: center;
 }
 
 div#wrapper {
@@ -36,10 +37,16 @@ div#wrapper {
 
 ul.list {
     list-style-type: none;
+    padding: 0;
 }
 
 ul.list li.element {
     width: 100px;
     float: left;
     margin: 10px;
+}
+
+.clear {
+    font-size: 0;
+    clear: both;
 }
