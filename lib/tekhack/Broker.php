@@ -59,7 +59,7 @@ class Broker
         }
         if (false === ($fql_query_obj = $this->getCache()->load($eventId . '_participants'))) {
             $query1 = 'SELECT uid FROM event_member WHERE eid=' . $eventId . ' AND rsvp_status="attending"';
-            $query2 = 'SELECT username, name, url, pic FROM profile WHERE id IN (' . $query1 . ')';
+            $query2 = 'SELECT username, name, url, pic, pic_crop FROM profile WHERE id IN (' . $query1 . ')';
             $fql_query_url = sprintf('%s/fql?q=%s&access_token=%s',
                 self::FB_GRAPH_URL,
                 urlencode($query2),
